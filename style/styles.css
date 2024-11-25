@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --ff-primary: "poppins", "sans-serif";
+  --ff-primary-color: #3A3A3A;
+  --ff-secondary-color: #18191F;
+  --ff-3rd-color: #000000;
+  --ff-4th-color: #6C6C6C;
+  --ff-btn-color: #E02C6D;
+  --ff-card-desc-color: #787885;
+}
+
+*{
+    font-family:  var(--ff-primary)
+}
+
+
+
+
+/* nav style start */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px;
+    align-items: center;
+
+}
+
+nav ul{
+    display: flex;
+    
+}
+
+nav li{
+    list-style: none;
+    margin-right: 15px;
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+.nav-header{
+  display: flex;
+  background-image: url('/images/Circle\ design.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  justify-content: space-between;
+  padding: 0 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-title-section h1{
+  font-size: 3.25rem;
+  color: var(--ff-primary-color);
+}
+
+.nav-description{
+  color: var(--ff-primary-color);
+}
+
+.prebook-btn{
+  background-color: var(--ff-btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  padding: 12px 50px;
+  font-size: 1rem;
+  
+}
+
+/* logo section styles */
+
+.logo-section{
+  /* border-top: 2px solid gray; */
+  display: flex;
+  justify-content: space-around;
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+/* product section styles */
+
+.product-section{
+  max-width: 1050px;
+  max-height: 1660px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.product-section-heading{
+  color: var(--ff-primary-color);
+  font-weight: 600;
+  font-size: 1.75rem
+}
+
+.items-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  row-gap: 15px;
+  
+}
+
+.item{
+  text-align: start;
+  width: 330px;
+  height: 450px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.item h2{
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--ff-secondary-color);
+  margin: 5px 0;
+}
+
+.item h3{
+  font-weight: 400;
+  color: var(--ff-3rd-color);
+  margin-top: 5px;
+}
+
+.item p{
+  color: var(--ff-card-desc-color);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.see-more-btn{
+  text-align: end;
+  color: var(--ff-btn-color);
+  margin-top: 25px;
+}
+
+/* feature section styles */
+
+.feature-section{
+  display: flex;
+  justify-content:center; 
+  margin: 0 auto;
+  margin-top: 150px;
+  gap: 95px;
+}
+
+.feature-details h1{
+  font-weight: 700;
+  font-size: 2.35rem; 
+}
+
+.feature-details p{
+  font-weight: 700;
+  color: var(--ff-4th-color);
+}
+
+.join-btn{
+  background-color: var(--ff-btn-color);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 700;
+}
+
+footer{
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  margin-top: 70px;
+}
+
+footer h1{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+footer p{
+  font-family: "Manrope", sans-serif;
+  /* font-weight: bold; */
+  font-size: 14px;
+}
+
+.footer-icons{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  gap: 25px;
+}
+
+
+@media screen and (max-width : 976px) {
+
+  nav{
+    flex-direction: column;
+  }
+
+  .nav-header{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .nav-header .nav-img{
+    /* max-height: 250px; */
+  }
+
+  .nav-title-section{
+    /* max-height: 250px; */
+    text-align: center;
+  }
+
+  .nav-header{
+    background-image: none;
+  }
+
+  .logo-section{
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+  }
+
+  .items-container{
+    grid-template-columns: 1fr;
+  }
+
+  .feature-section{
+    flex-direction: column-reverse;
+  }
+  
+}
